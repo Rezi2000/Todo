@@ -178,6 +178,7 @@ i{
 
 
 
+//
 @media only screen and (max-width:768px){
     .input,.input_items{
         width: 90%;
@@ -186,15 +187,12 @@ i{
     .footer{
         width: 76.5%;
         height: 40px;
+        font-size: 0.9em;
     }
 
 
     .input_items div{
         font-size: 1.1em;
-    }
-
-    .footer{
-        font-size: 0.9em;
     }
 
     .count{
@@ -207,4 +205,22 @@ i{
         left: 5px;
         text-align: center;
     }
+}
+
+
+
+@media only screen and (max-width:414px){
+    .input,.input_items{
+        width: 100%;
+    }
+
+    .footer{
+        width: 85%;
+        font-size: .8em;
+    }
+
+    .specified{
+        width: 160px;
+    }
+
 }
