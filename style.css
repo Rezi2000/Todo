@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(to right,#5A3F37,#2C7744)
+    
+}
+
+
+
+
+.header{
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color:rgb(39, 7, 7);
+    cursor: default;
+    font-style: oblique;
+}
+
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+input{
+    padding: 8px;
+    padding-left: 12px;
+    width: 70%;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    border-color: cadetblue;
+    
+}
+
+button{
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 20px;
+    width: 55px;
+    background-color: rgb(40, 40, 116);
+    color: white;
+    cursor: pointer;
+    border: none;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button:active{
+    opacity: 0.5;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+
+
+.input_items{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    cursor: pointer;
+}
+
+
+
+
+.input_items div{
+    display: flex;
+    border: 1px solid rgb(165, 147, 125);
+    width: 85%;
+    padding: 12px;
+    justify-content: space-between;
+    font-size: 1.3em;
+    position: relative;
+    background-color: #d6b7b7;
+    box-shadow: 5px 5px 12px black;
+    
+}
+
+.footer{
+    position: relative;
+    width: 42.5%;
+    height: 35px;
+    background-color: #d6b7b7;
+    border:1px solid rgb(165, 147, 125);
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    cursor: default;
+    color:rgb(5, 28, 37) ;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 12px black;
+    margin-bottom: 15px;
+    
+   
+    
+    
+}
+
+.specified{
+    display: flex;
+    cursor: pointer;
+    width: 200px;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+.specified span:hover{
+    border: 1px solid grey;
+}
+
+
+
+.item{
+    position: absolute;
+    left: 75px;
+}
+
+.delete{
+    position: absolute;
+    right: 20px;
+    opacity: 0.7;
+    user-select: none;
+}
+
+
+
+.delete:hover{
+    transform:scale(1.3)
+}
+
+.input_items div:hover{
+    background-color: #ddd;
+}
+
+.input_items div.checked{
+    background-color: rgb(126, 93, 93);
+
+}
+
+.symbol{
+    opacity: 0;
+    user-select: none;
+}
+
+
+i{
+    color: rgb(228, 25, 25);
+}
+
+
+.Clear{
+    cursor: pointer;
+}
+
+.Clear:hover{
+    color: brown;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .input,.input_items{
+        width: 90%;
+    }
+
+    .footer{
+        width: 76.5%;
+        height: 40px;
+    }
+
+
+    .input_items div{
+        font-size: 1.1em;
+    }
+
+    .footer{
+        font-size: 0.9em;
+    }
+
+    .count{
+       position: relative;
+       right: 10px;
+    }
+
+    .Clear{
+        position: relative;
+        left: 5px;
+        text-align: center;
+    }
+}
